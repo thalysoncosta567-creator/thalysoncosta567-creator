@@ -1,16 +1,36 @@
-## Hi there 👋
+# 👋 Hello, I'm Thalyson Gama
 
-<!--
-**thalysoncosta567-creator/thalysoncosta567-creator** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 💻 Computer Engineering Student | Systems Development Technician
 
-Here are some ideas to get you started:
+> **MAKE FUTURE TOGHETER 🚀**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Sou estudante de **Engenharia da Computação** e formado como **Técnico em Desenvolvimento de Sistemas**, com interesse em desenvolvimento de software, backend, bancos de dados e IoT.
+
+### 🛠️ Skills & Technologies
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=c,java,php,js,html,postgres,arduino,esp32,docker,git,github" />
+</p>
+
+**Linguagens:** C • Java • PHP • JavaScript • SQL
+**Backend:** Node.js • NestJS • Prisma • APIs REST
+**Banco de Dados:** PostgreSQL • SQL
+**IoT:** ESP32 • Arduino • Sensores • Sistemas embarcados
+**Ferramentas:** Git • GitHub • Docker • DigitalOcean
+
+### 🚀 Featured Projects
+
+* 🩺 **Sensor de Quedas para Idosos** — ESP32, sensores, GPS e aplicativo.
+* 🏆 **Sistema de Interclasse Escolar** — PHP, SQL e banco de dados.
+* 💙 **Plataforma de Doações** — Java, APIs e integração com Mercado Pago.
+
+### 🎓 Education
+
+**Engenharia da Computação** — UNISAL
+**Técnico em Desenvolvimento de Sistemas**
+
+---
+
+<p align="center">
+  <strong>MAKE FUTURE TOGHETER.</strong>
+</p>
