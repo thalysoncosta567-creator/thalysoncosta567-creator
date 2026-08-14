@@ -1,0 +1,170 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgMain" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.48" stop-color="#07152B"/>
+      <stop offset="1" stop-color="#0A2342"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="190" y1="0" x2="1020" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <linearGradient id="softLine" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#93C5FD" stop-opacity="0.9"/>
+      <stop offset="0.82" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 52) rotate(135) scale(230 230)">
+      <stop stop-color="#38BDF8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 255) rotate(135) scale(270 270)">
+      <stop stop-color="#2563EB" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#8FB7FF" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+
+    <filter id="blurGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="typingClip">
+      <rect x="347" y="197" width="0" height="35">
+        <animate attributeName="width"
+                 values="0;420;420;0"
+                 keyTimes="0;0.42;0.82;1"
+                 dur="6s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <style>
+      .name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        fill: #FFFFFF;
+      }
+
+      .subtitle {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        fill: #C8DAF7;
+      }
+
+      .mini {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        fill: #7DD3FC;
+      }
+
+      .tag {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        fill: #D9EEFF;
+      }
+
+      .typing {
+        font-family: Consolas, 'Courier New', monospace;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        fill: #7DD3FC;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="20" fill="url(#bgMain)"/>
+  <rect width="1200" height="320" rx="20" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="318" rx="19" stroke="white" stroke-opacity="0.08"/>
+
+  <rect x="0" y="0" width="1200" height="320" rx="20" fill="url(#glow1)"/>
+  <rect x="0" y="0" width="1200" height="320" rx="20" fill="url(#glow2)"/>
+
+  <g opacity="0.45">
+    <path d="M64 82 H262" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="64" cy="82" r="3" fill="#7DD3FC"/>
+    <circle cx="262" cy="82" r="3" fill="#7DD3FC"/>
+
+    <path d="M936 86 H1138" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="936" cy="86" r="3" fill="#7DD3FC"/>
+    <circle cx="1138" cy="86" r="3" fill="#7DD3FC"/>
+
+    <path d="M1040 245 H1145" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="1040" cy="245" r="3" fill="#7DD3FC"/>
+    <circle cx="1145" cy="245" r="3" fill="#7DD3FC"/>
+
+    <path d="M62 250 H215" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="62" cy="250" r="3" fill="#7DD3FC"/>
+    <circle cx="215" cy="250" r="3" fill="#7DD3FC"/>
+  </g>
+
+  <g opacity="0.7">
+    <circle cx="1028" cy="64" r="2.4" fill="#E0F2FE">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1070" cy="111" r="2.2" fill="#E0F2FE">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1102" cy="75" r="2.2" fill="#E0F2FE">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="228" r="2.2" fill="#E0F2FE">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <text x="600" y="70" text-anchor="middle" class="mini">PORTFOLIO • README • GITHUB PROFILE</text>
+
+  <text x="600" y="130" text-anchor="middle" class="name">Thalyson Gama</text>
+
+  <text x="600" y="166" text-anchor="middle" class="subtitle">Computer Engineering Student • Systems Development Technician</text>
+
+  <line x1="190" y1="186" x2="1010" y2="186" stroke="url(#softLine)" stroke-width="2"/>
+
+  <g clip-path="url(#typingClip)">
+    <text x="600" y="221" text-anchor="middle" class="typing" filter="url(#blurGlow)">MAKE FUTURE TOGETHER 🚀</text>
+  </g>
+
+  <rect x="811" y="196" width="3" height="30" rx="1.5" fill="#E0F2FE">
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <g transform="translate(338 247)">
+    <rect x="0" y="0" width="146" height="34" rx="17" fill="#091325" stroke="#2A4E78" stroke-width="1"/>
+    <circle cx="17" cy="17" r="4" fill="#38BDF8"/>
+    <text x="31" y="22" class="tag">BACKEND</text>
+
+    <rect x="161" y="0" width="162" height="34" rx="17" fill="#091325" stroke="#2A4E78" stroke-width="1"/>
+    <circle cx="178" cy="17" r="4" fill="#38BDF8"/>
+    <text x="192" y="22" class="tag">DATABASES</text>
+
+    <rect x="339" y="0" width="110" height="34" rx="17" fill="#091325" stroke="#2A4E78" stroke-width="1"/>
+    <circle cx="356" cy="17" r="4" fill="#38BDF8"/>
+    <text x="370" y="22" class="tag">IoT</text>
+  </g>
+
+  <path d="M0 295 C145 270, 250 312, 390 296 C545 279, 674 286, 818 297 C934 306, 1050 284, 1200 297" stroke="url(#accent)" stroke-opacity="0.45" stroke-width="2.5" fill="none"/>
+
+  <path d="M0 302 C145 279, 250 322, 390 304 C545 289, 674 294, 818 305 C934 313, 1050 292, 1200 304" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.2" fill="none"/>
+</svg>
