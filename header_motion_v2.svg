@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360">
+    <stop offset="0" stop-color="#01030A"/>
+    <stop offset="0.48" stop-color="#061525"/>
+    <stop offset="1" stop-color="#020610"/>
+  </linearGradient>
+
+  <linearGradient id="nameGrad" x1="250" x2="950">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset=".45" stop-color="#DDF5FF"/>
+    <stop offset=".6" stop-color="#55D9FF"/>
+    <stop offset="1" stop-color="#FFFFFF"/>
+    <animate attributeName="x1" values="150;550;150" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="750;1150;750" dur="5s" repeatCount="indefinite"/>
+  </linearGradient>
+
+  <linearGradient id="cyan" x1="0" x2="1">
+    <stop stop-color="#22D3EE"/>
+    <stop offset=".5" stop-color="#0EA5E9"/>
+    <stop offset="1" stop-color="#60A5FA"/>
+  </linearGradient>
+
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="glowSmall" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="2.5" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M30 0H0V30" fill="none" stroke="#58C8FF" stroke-opacity=".065" stroke-width="1"/>
+  </pattern>
+
+  <clipPath id="typing">
+    <rect x="365" y="230" width="0" height="42">
+      <animate attributeName="width"
+               values="0;470;470;0"
+               keyTimes="0;.48;.83;1"
+               dur="6s"
+               repeatCount="indefinite"/>
+    </rect>
+  </clipPath>
+
+  <style>
+    .sans { font-family: Arial, Helvetica, sans-serif; }
+    .mono { font-family: Consolas, "Courier New", monospace; }
+  </style>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+
+<!-- MOVING SCANNER -->
+<rect x="-180" y="0" width="140" height="360" fill="#17C8FF" opacity=".035">
+  <animate attributeName="x" values="-180;1240" dur="4.5s" repeatCount="indefinite"/>
+</rect>
+<rect x="-130" y="0" width="4" height="360" fill="#39D8FF" opacity=".6" filter="url(#glow)">
+  <animate attributeName="x" values="-130;1210" dur="4.5s" repeatCount="indefinite"/>
+</rect>
+
+<!-- PULSING BORDER -->
+<rect x="2" y="2" width="1196" height="356" rx="20" fill="none" stroke="#2AC7FF" stroke-width="1.4">
+  <animate attributeName="stroke-opacity" values=".18;.75;.18" dur="3s" repeatCount="indefinite"/>
+</rect>
+
+<!-- HUD CORNERS -->
+<g fill="none" stroke="#2AC7FF" stroke-width="1.3" opacity=".65">
+  <path d="M30 80V32L48 16H290"/>
+  <path d="M1170 80V32l-18-16H910"/>
+  <path d="M30 280v48l18 16h242"/>
+  <path d="M1170 280v48l-18 16H910"/>
+</g>
+
+<!-- ROTATING TECH RINGS -->
+<g transform="translate(600 178)" opacity=".55">
+  <circle r="135" fill="none" stroke="#1EC9FF" stroke-width="1.2" stroke-dasharray="8 16">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="0" to="360" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="165" fill="none" stroke="#3786FF" stroke-width="1" stroke-dasharray="3 19">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="360" to="0" dur="26s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="195" fill="none" stroke="#67E8F9" stroke-width=".8" stroke-dasharray="2 25">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="0" to="360" dur="34s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<!-- FAST MOVING LIGHT LINES -->
+<g fill="none" stroke-linecap="round" filter="url(#glowSmall)">
+  <path d="M0 90 C260 25 410 145 650 83 C870 25 1010 105 1200 62"
+        stroke="#21CFFF" stroke-width="2.2" stroke-dasharray="30 300" opacity=".72">
+    <animate attributeName="stroke-dashoffset" from="0" to="-900" dur="3.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 290 C250 230 450 325 670 270 C875 217 1010 295 1200 250"
+        stroke="#3B82F6" stroke-width="2" stroke-dasharray="40 330" opacity=".58">
+    <animate attributeName="stroke-dashoffset" from="0" to="950" dur="4.3s" repeatCount="indefinite"/>
+  </path>
+</g>
+
+<!-- FLOATING PARTICLES -->
+<g fill="#77E4FF">
+  <circle cx="115" cy="55" r="2">
+    <animate attributeName="cy" values="55;72;55" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".2;1;.2" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="75" r="2">
+    <animate attributeName="cy" values="75;58;75" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;.2;1" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="165" cy="302" r="1.6">
+    <animate attributeName="cx" values="165;190;165" dur="3.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1010" cy="300" r="1.7">
+    <animate attributeName="cx" values="1010;980;1010" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<!-- CENTER TITLE -->
+<text x="600" y="138" text-anchor="middle" class="sans"
+      fill="url(#nameGrad)" font-size="61" font-weight="800" letter-spacing="-1"
+      filter="url(#glowSmall)">
+  Thalyson Gama
+</text>
+
+<text x="600" y="185" text-anchor="middle" class="sans"
+      fill="#CFE3F6" font-size="21" font-weight="600">
+  Computer Engineering Student
+  <tspan fill="#32D3FF"> • </tspan>
+  Systems Development Technician
+</text>
+
+<!-- ANIMATED SLOGAN -->
+<g clip-path="url(#typing)">
+  <text x="600" y="259" text-anchor="middle" class="mono"
+        fill="#F5FBFF" font-size="29" font-weight="700" letter-spacing="5">
+    MAKE <tspan fill="#2ED4FF">FUTURE</tspan> TOGETHER
+  </text>
+</g>
+<rect x="833" y="235" width="3" height="31" rx="1.5" fill="#9BE9FF" filter="url(#glowSmall)">
+  <animate attributeName="opacity" values="1;0;1" dur=".75s" repeatCount="indefinite"/>
+</rect>
+
+<!-- ========= VERY VISIBLE MOVING OS ICONS ========= -->
+
+<!-- WINDOWS: crosses whole header left -> right -->
+<g>
+  <animateTransform attributeName="transform" type="translate"
+                    values="-90 92;1290 92"
+                    dur="8.8s" repeatCount="indefinite"/>
+  <g transform="rotate(-8)">
+    <circle r="27" fill="#061426" stroke="#35D4FF" stroke-width="1.5" filter="url(#glowSmall)"/>
+    <g fill="#4EDCFF">
+      <path d="M-14 -13 L-2 -15 V-2 H-14Z"/>
+      <path d="M2 -16 L15 -18 V-2 H2Z"/>
+      <path d="M-14 2 H-2 V14 L-14 12Z"/>
+      <path d="M2 2 H15 V17 L2 15Z"/>
+    </g>
+  </g>
+</g>
+
+<!-- LINUX: right -> left, lower lane -->
+<g>
+  <animateTransform attributeName="transform" type="translate"
+                    values="1300 292;-100 292"
+                    dur="10.6s" repeatCount="indefinite"/>
+  <g>
+    <circle r="27" fill="#061426" stroke="#BDEFFF" stroke-width="1.5" filter="url(#glowSmall)"/>
+    <ellipse cx="0" cy="4" rx="12" ry="15" fill="#F8FAFC"/>
+    <ellipse cx="0" cy="0" rx="10" ry="12" fill="#08111F"/>
+    <ellipse cx="-4" cy="-2" rx="2.2" ry="3" fill="#F8FAFC"/>
+    <ellipse cx="4" cy="-2" rx="2.2" ry="3" fill="#F8FAFC"/>
+    <circle cx="-4" cy="-1.6" r="1" fill="#26D3FF"/>
+    <circle cx="4" cy="-1.6" r="1" fill="#26D3FF"/>
+    <path d="M-2 3H2L0 6Z" fill="#F59E0B"/>
+  </g>
+</g>
+
+<!-- ANDROID: diagonal -->
+<g>
+  <animateTransform attributeName="transform" type="translate"
+                    values="-80 300;250 240;520 305;780 238;1280 300"
+                    keyTimes="0;.25;.5;.75;1"
+                    dur="12s" repeatCount="indefinite"/>
+  <g>
+    <circle r="26" fill="#04131B" stroke="#5DE5D6" stroke-width="1.4" filter="url(#glowSmall)"/>
+    <g fill="#70EAD9">
+      <path d="M-10 -5H10V11H-10Z"/>
+      <path d="M-10 -6C-9 -13 9 -13 10 -6Z"/>
+      <rect x="-14" y="-4" width="3" height="12" rx="1.5"/>
+      <rect x="11" y="-4" width="3" height="12" rx="1.5"/>
+      <rect x="-7" y="10" width="4" height="8" rx="2"/>
+      <rect x="3" y="10" width="4" height="8" rx="2"/>
+    </g>
+    <path d="M-6 -12L-9 -17M6 -12L9 -17" stroke="#70EAD9" stroke-width="1.7"/>
+  </g>
+</g>
+
+<!-- APPLE: opposite diagonal -->
+<g>
+  <animateTransform attributeName="transform" type="translate"
+                    values="1280 62;1030 116;760 60;470 115;-90 65"
+                    keyTimes="0;.25;.5;.75;1"
+                    dur="11.2s" repeatCount="indefinite"/>
+  <g>
+    <circle r="26" fill="#07101D" stroke="#FFFFFF" stroke-width="1.3" filter="url(#glowSmall)"/>
+    <path d="M5 -12C7 -17 11 -18 14 -18C13 -14 10 -11 6 -10Z" fill="#FFFFFF"/>
+    <path d="M10 -6C4 -10 -2 -8 -4 -5C-8 -8 -14 -7 -16 -3C-20 4 -13 16 -7 19C-4 20 -1 17 2 19C6 21 10 19 13 15C15 12 17 9 18 5C11 2 10 -3 10 -6Z" fill="#FFFFFF"/>
+  </g>
+</g>
+
+<!-- UBUNTU: looping side-to-side -->
+<g>
+  <animateTransform attributeName="transform" type="translate"
+                    values="150 205;350 205;150 205"
+                    dur="5s" repeatCount="indefinite"/>
+  <g>
+    <circle r="25" fill="#07101D" stroke="#7BD9FF" stroke-width="1.3" filter="url(#glowSmall)"/>
+    <circle r="10" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="0" cy="-16" r="4" fill="#FFFFFF"/>
+    <circle cx="-14" cy="8" r="4" fill="#FFFFFF"/>
+    <circle cx="14" cy="8" r="4" fill="#FFFFFF"/>
+  </g>
+</g>
+
+<!-- EXTRA ORBIT DOTS -->
+<g transform="translate(600 178)" fill="#3DD7FF" filter="url(#glowSmall)">
+  <circle cx="135" cy="0" r="4">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="0" to="360" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="-165" cy="0" r="3">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="0" to="-360" dur="8s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<!-- STATUS BAR -->
+<g transform="translate(530 325)">
+  <rect width="140" height="3" rx="1.5" fill="#0C2032"/>
+  <rect width="35" height="3" rx="1.5" fill="#2FD6FF">
+    <animate attributeName="x" values="0;105;0" dur="2.7s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+</svg>
