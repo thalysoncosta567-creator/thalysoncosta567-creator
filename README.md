@@ -1,36 +1,40 @@
-# 👋 Hello, I'm Thalyson Gama
+<div align="center">
 
-### 💻 Computer Engineering Student | Systems Development Technician
+<img src="./header.svg" width="100%" alt="Thalyson Gama - Make Future Together" />
 
-> **MAKE FUTURE TOGHETER 🚀**
+<br/>
 
-Sou estudante de **Engenharia da Computação** e formado como **Técnico em Desenvolvimento de Sistemas**, com interesse em desenvolvimento de software, backend, bancos de dados e IoT.
+<a href="https://www.linkedin.com/in/thalyson-gama-72222329a?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+&nbsp;
+<a href="https://www.instagram.com/thalysongama?igsh=cmpvZXozZmJtYTNu&igsi=cmpvZXozZmJtYTNu">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+</a>
 
-### 🛠️ Skills & Technologies
+</div>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=c,java,php,js,html,postgres,arduino,esp32,docker,git,github" />
-</p>
+👋 About me
 
-**Linguagens:** C • Java • PHP • JavaScript • SQL
-**Backend:** Node.js • NestJS • Prisma • APIs REST
-**Banco de Dados:** PostgreSQL • SQL
-**IoT:** ESP32 • Arduino • Sensores • Sistemas embarcados
-**Ferramentas:** Git • GitHub • Docker • DigitalOcean
+Sou estudante de Engenharia da Computação e formado como Técnico em Desenvolvimento de Sistemas, com interesse em desenvolvimento de software, backend, bancos de dados e IoT.
 
-### 🚀 Featured Projects
+🛠️ Skills & Technologies
 
-* 🩺 **Sensor de Quedas para Idosos** — ESP32, sensores, GPS e aplicativo.
-* 🏆 **Sistema de Interclasse Escolar** — PHP, SQL e banco de dados.
-* 💙 **Plataforma de Doações** — Java, APIs e integração com Mercado Pago.
+Linguagens: C • Java • PHP • JavaScript • SQL
+Backend: Node.js • NestJS • Prisma • APIs REST
+Banco de Dados: PostgreSQL • SQL
+IoT: ESP32 • Arduino • Sensores • Sistemas embarcados
+Ferramentas: Git • GitHub • Docker • DigitalOcean
 
-### 🎓 Education
+🚀 Featured Projects
 
-**Engenharia da Computação** — UNISAL
-**Técnico em Desenvolvimento de Sistemas**
+🩺 Sensor de Quedas para Idosos — ESP32, sensores, GPS e aplicativo.
 
----
+🏆 Sistema de Interclasse Escolar — PHP, SQL e banco de dados.
 
-<p align="center">
-  <strong>MAKE FUTURE TOGHETER.</strong>
-</p>
+💙 Plataforma de Doações — Java, APIs e integração com Mercado Pago.
+
+🎓 Education
+
+Engenharia da Computação — UNISAL
+Técnico em Desenvolvimento de Sistemas
