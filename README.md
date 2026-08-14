@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./header_pro.svg" width="100%" alt="Thalyson Gama - Header" />
+<img src="./header_motion_v2.svg" width="100%" alt="Thalyson Gama - Header" />
 
 <br/>
 
